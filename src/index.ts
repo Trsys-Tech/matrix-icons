@@ -9,6 +9,7 @@ export { SquareCaretUp } from "./components/SquareCaretUp";
 export { SquareArrowUpLeft } from "./components/SquareArrowUpLeft";
 export { SquareCaretDown } from "./components/SquareCaretDown";
 export { SquareDownRight } from "./components/SquareDownRight";
+export { Spinner } from "./components/Spinner";
 export { Slash } from "./components/Slash";
 export { SliderUp } from "./components/SliderUp";
 export { Snowflake } from "./components/Snowflake";
