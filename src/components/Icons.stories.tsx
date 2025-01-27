@@ -63,6 +63,7 @@ import { Gear } from "./Gear";
 import { Google } from "./Google";
 import { GridDividers } from "./GridDividers";
 import { Grip } from "./Grip";
+import { Grid } from "./Grid";
 import { House } from "./House";
 import { Save } from "./Save";
 import { FileChart } from "./FileChart";
@@ -628,6 +629,12 @@ export const Icons = () => {
             Grip
           </div>
           <Grip />
+        </div>
+        <div>
+          <div className="icon-name" data-name="Grid">
+            Grid
+          </div>
+          <Grid />
         </div>
         <div>
           <div className="icon-name" data-name="House">
