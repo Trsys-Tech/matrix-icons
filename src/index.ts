@@ -31,6 +31,7 @@ export { ChevronsDown } from "./components/ChevronsDown";
 export { ChevronsLeft } from "./components/ChevronsLeft";
 export { ChevronsRight } from "./components/ChevronsRight";
 export { ChevronsUp } from "./components/ChevronsUp";
+export { Circle } from "./components/Circle";
 export { CircleChecked } from "./components/CircleChecked";
 export { CircleDollar } from "./components/CircleDollar";
 export { CircleInfo } from "./components/CircleInfo";

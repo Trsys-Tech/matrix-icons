@@ -141,6 +141,7 @@ import { ValueEngineering } from "./ValueEngineering";
 import { Warning } from "./Warning";
 import { XMark } from "./XMark";
 import { Check } from "./Check";
+import { Circle } from "./Circle";
 
 const meta: Meta = {
   title: "Icons",
@@ -390,6 +391,12 @@ export const Icons = () => {
             ChevronsUp
           </div>
           <ChevronsUp />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="circle">
+            Circle
+          </div>
+          <Circle />
         </div>
         <div>
           <div className="icon-name" data-keywords="circle, check, mark">
