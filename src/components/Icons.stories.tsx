@@ -140,6 +140,7 @@ import { User } from "./User";
 import { ValueEngineering } from "./ValueEngineering";
 import { Warning } from "./Warning";
 import { XMark } from "./XMark";
+import { Check } from "./Check";
 
 const meta: Meta = {
   title: "Icons",
@@ -152,8 +153,8 @@ export const Icons = () => {
   React.useEffect(() => {
     const iconNames = document.querySelectorAll(".icon-name");
     iconNames.forEach(iconName => {
-      const name = iconName.getAttribute("data-name");
-      if (name?.toLowerCase().includes(searchValue.toLowerCase())) {
+      const keywords = iconName.getAttribute("data-keywords");
+      if (keywords?.toLowerCase().includes(searchValue.toLowerCase())) {
         iconName.parentElement!.style.display = "block";
       } else {
         iconName.parentElement!.style.display = "none";
@@ -193,835 +194,841 @@ export const Icons = () => {
       </div>
       <div className="container">
         <div>
-          <div className="icon-name" data-name="AdobeAcrobat">
+          <div className="icon-name" data-keywords="pdf, adobe, acrobat">
             AdobeAcrobat
           </div>
           <AdobeAcrobat />
         </div>
         <div>
-          <div className="icon-name" data-name="AlignCenter">
+          <div className="icon-name" data-keywords="align, center">
             AlignCenter
           </div>
           <AlignCenter />
         </div>
         <div>
-          <div className="icon-name" data-name="AlignJustify">
+          <div className="icon-name" data-keywords="align, justify">
             AlignJustify
           </div>
           <AlignJustify />
         </div>
         <div>
-          <div className="icon-name" data-name="AlignLeft">
+          <div className="icon-name" data-keywords="align, left">
             AlignLeft
           </div>
           <AlignLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="AlignRight">
+          <div className="icon-name" data-keywords="align, right">
             AlignRight
           </div>
           <AlignRight />
         </div>
         <div>
-          <div className="icon-name" data-name="Archive">
+          <div className="icon-name" data-keywords="archive, file">
             Archive
           </div>
           <Archive />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowLeft">
+          <div className="icon-name" data-keywords="arrow, left">
             ArrowLeft
           </div>
           <ArrowLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowLeftToLine">
+          <div className="icon-name" data-keywords="arrow, left, line">
             ArrowLeftToLine
           </div>
           <ArrowLeftToLine />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowRight">
+          <div className="icon-name" data-keywords="arrow, right">
             ArrowRight
           </div>
           <ArrowRight />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowRightFromLine">
+          <div className="icon-name" data-keywords="arrow, right, line">
             ArrowRightFromLine
           </div>
           <ArrowRightFromLine />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowRotateRight">
+          <div className="icon-name" data-keywords="arrow, rotate, right">
             ArrowRotateRight
           </div>
           <ArrowRotateRight />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowsInward">
+          <div className="icon-name" data-keywords="arrows, inward">
             ArrowsInward
           </div>
           <ArrowsInward />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowsOutward">
+          <div className="icon-name" data-keywords="arrows, outward">
             ArrowsOutward
           </div>
           <ArrowsOutward />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowsMaximize">
+          <div className="icon-name" data-keywords="arrows, maximize, outward">
             ArrowsMaximize
           </div>
           <ArrowsMaximize />
         </div>
         <div>
-          <div className="icon-name" data-name="ArrowsMinimize">
+          <div className="icon-name" data-keywords="arrows, minimize, inward">
             ArrowsMinimize
           </div>
           <ArrowsMinimize />
         </div>
         <div>
-          <div className="icon-name" data-name="Assemblies">
+          <div className="icon-name" data-keywords="assemblies">
             Assemblies
           </div>
           <Assemblies />
         </div>
         <div>
-          <div className="icon-name" data-name="Attachment">
+          <div className="icon-name" data-keywords="attachment, paperclip">
             Attachment
           </div>
           <Attachment />
         </div>
         <div>
-          <div className="icon-name" data-name="Ban">
+          <div className="icon-name" data-keywords="ban, stop">
             Ban
           </div>
           <Ban />
         </div>
         <div>
-          <div className="icon-name" data-name="Bars">
+          <div className="icon-name" data-keywords="bars, menu">
             Bars
           </div>
           <Bars />
         </div>
         <div>
-          <div className="icon-name" data-name="BarsSort">
+          <div className="icon-name" data-keywords="bars, sort, menu">
             BarsSort
           </div>
           <BarsSort />
         </div>
         <div>
-          <div className="icon-name" data-name="Bell">
+          <div className="icon-name" data-keywords="bell, notification">
             Bell
           </div>
           <Bell />
         </div>
         <div>
-          <div className="icon-name" data-name="Board">
+          <div className="icon-name" data-keywords="board">
             Board
           </div>
           <Board />
         </div>
         <div>
-          <div className="icon-name" data-name="Breakdown">
+          <div className="icon-name" data-keywords="breakdown, article">
             Breakdown
           </div>
           <Breakdown />
         </div>
         <div>
-          <div className="icon-name" data-name="Calendar">
+          <div className="icon-name" data-keywords="calendar, date">
             Calendar
           </div>
           <Calendar />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronDown">
+          <div className="icon-name" data-keywords="check, mark">
+            Check
+          </div>
+          <Check />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="chevron, arrow, down">
             ChevronDown
           </div>
           <ChevronDown />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronLeft">
+          <div className="icon-name" data-keywords="chevron, arrow, left">
             ChevronLeft
           </div>
           <ChevronLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronRight">
+          <div className="icon-name" data-keywords="chevron, arrow, right">
             ChevronRight
           </div>
           <ChevronRight />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronUp">
+          <div className="icon-name" data-keywords="chevron, arrow, up">
             ChevronUp
           </div>
           <ChevronUp />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronsDown">
+          <div className="icon-name" data-keywords="chevrons, arrows, down">
             ChevronsDown
           </div>
           <ChevronsDown />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronsLeft">
+          <div className="icon-name" data-keywords="chevrons, arrows, left">
             ChevronsLeft
           </div>
           <ChevronsLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronsRight">
+          <div className="icon-name" data-keywords="chevrons, arrows, right">
             ChevronsRight
           </div>
           <ChevronsRight />
         </div>
         <div>
-          <div className="icon-name" data-name="ChevronsUp">
+          <div className="icon-name" data-keywords="chevrons, arrows, up">
             ChevronsUp
           </div>
           <ChevronsUp />
         </div>
         <div>
-          <div className="icon-name" data-name="CircleChecked">
+          <div className="icon-name" data-keywords="circle, check, mark">
             CircleChecked
           </div>
           <CircleChecked />
         </div>
         <div>
-          <div className="icon-name" data-name="CircleDollar">
+          <div className="icon-name" data-keywords="circle, dollar">
             CircleDollar
           </div>
           <CircleDollar />
         </div>
         <div>
-          <div className="icon-name" data-name="CircleInfo">
+          <div className="icon-name" data-keywords="circle, info, i, exclamation">
             CircleInfo
           </div>
           <CircleInfo />
         </div>
         <div>
-          <div className="icon-name" data-name="CirclePlus">
+          <div className="icon-name" data-keywords="circle, plus, add, +">
             CirclePlus
           </div>
           <CirclePlus />
         </div>
         <div>
-          <div className="icon-name" data-name="CircleXmark">
+          <div className="icon-name" data-keywords="circle, x, mark, close">
             CircleXmark
           </div>
           <CircleXmark />
         </div>
         <div>
-          <div className="icon-name" data-name="Clock">
+          <div className="icon-name" data-keywords="clock, time">
             Clock
           </div>
           <Clock />
         </div>
         <div>
-          <div className="icon-name" data-name="Clone">
+          <div className="icon-name" data-keywords="clone, copy">
             Clone
           </div>
           <Clone />
         </div>
         <div>
-          <div className="icon-name" data-name="Comma">
+          <div className="icon-name" data-keywords="comma">
             Comma
           </div>
           <Comma />
         </div>
         <div>
-          <div className="icon-name" data-name="Comments">
+          <div className="icon-name" data-keywords="comments, chat">
             Comments
           </div>
           <Comments />
         </div>
         <div>
-          <div className="icon-name" data-name="CommentsBadge">
+          <div className="icon-name" data-keywords="comments, chat, badge">
             CommentsBadge
           </div>
           <CommentsBadge />
         </div>
         <div>
-          <div className="icon-name" data-name="Company">
+          <div className="icon-name" data-keywords="company, building">
             Company
           </div>
           <Company />
         </div>
         <div>
-          <div className="icon-name" data-name="Connect">
+          <div className="icon-name" data-keywords="connect, link">
             Connect
           </div>
           <Connect />
         </div>
         <div>
-          <div className="icon-name" data-name="Copy">
+          <div className="icon-name" data-keywords="copy, duplicate">
             Copy
           </div>
           <Copy />
         </div>
         <div>
-          <div className="icon-name" data-name="Dashboard">
+          <div className="icon-name" data-keywords="dashboard">
             Dashboard
           </div>
           <Dashboard />
         </div>
         <div>
-          <div className="icon-name" data-name="Deficiency">
+          <div className="icon-name" data-keywords="deficiency, wrench, gear, tool">
             Deficiency
           </div>
           <Deficiency />
         </div>
         <div>
-          <div className="icon-name" data-name="DeficiencyList">
+          <div className="icon-name" data-keywords="deficiency, list">
             DeficiencyList
           </div>
           <DeficiencyList />
         </div>
         <div>
-          <div className="icon-name" data-name="Download">
+          <div className="icon-name" data-keywords="download, arrow">
             Download
           </div>
           <Download />
         </div>
         <div>
-          <div className="icon-name" data-name="Driver">
+          <div className="icon-name" data-keywords="driver, person, user">
             Driver
           </div>
           <Driver />
         </div>
         <div>
-          <div className="icon-name" data-name="Elipsis">
+          <div className="icon-name" data-keywords="elipsis, more">
             Elipsis
           </div>
           <Elipsis />
         </div>
         <div>
-          <div className="icon-name" data-name="ElipsisVertical">
+          <div className="icon-name" data-keywords="elipsis, more, vertical">
             ElipsisVertical
           </div>
           <ElipsisVertical />
         </div>
         <div>
-          <div className="icon-name" data-name="ElipsisVerticalStroke">
+          <div className="icon-name" data-keywords="elipsis, more, vertical, stroke">
             ElipsisVerticalStroke
           </div>
           <ElipsisVerticalStroke />
         </div>
         <div>
-          <div className="icon-name" data-name="Email">
+          <div className="icon-name" data-keywords="email, mail, envelope">
             Email
           </div>
           <Email />
         </div>
         <div>
-          <div className="icon-name" data-name="Exclusion">
+          <div className="icon-name" data-keywords="exclusion, square, exclamation">
             Exclusion
           </div>
           <Exclusion />
         </div>
         <div>
-          <div className="icon-name" data-name="Expand">
+          <div className="icon-name" data-keywords="expand, square">
             Expand
           </div>
           <Expand />
         </div>
         <div>
-          <div className="icon-name" data-name="Export">
+          <div className="icon-name" data-keywords="export, arrow">
             Export
           </div>
           <Export />
         </div>
         <div>
-          <div className="icon-name" data-name="Eye">
+          <div className="icon-name" data-keywords="eye, view">
             Eye
           </div>
           <Eye />
         </div>
         <div>
-          <div className="icon-name" data-name="EyeSlash">
+          <div className="icon-name" data-keywords="eye, slash, view, hide">
             EyeSlash
           </div>
           <EyeSlash />
         </div>
         <div>
-          <div className="icon-name" data-name="FileChart">
+          <div className="icon-name" data-keywords="file, chart">
             FileChart
           </div>
           <FileChart />
         </div>
         <div>
-          <div className="icon-name" data-name="FileChartColumn">
+          <div className="icon-name" data-keywords="file, chart, column, bar">
             FileChartColumn
           </div>
           <FileChartColumn />
         </div>
         <div>
-          <div className="icon-name" data-name="FileExcel">
+          <div className="icon-name" data-keywords="file, excel">
             FileExcel
           </div>
           <FileExcel />
         </div>
         <div>
-          <div className="icon-name" data-name="FileLines">
+          <div className="icon-name" data-keywords="file, lines">
             FileLines
           </div>
           <FileLines />
         </div>
         <div>
-          <div className="icon-name" data-name="Filter">
+          <div className="icon-name" data-keywords="filter, funnel">
             Filter
           </div>
           <Filter />
         </div>
         <div>
-          <div className="icon-name" data-name="FilterCircleXMark">
+          <div className="icon-name" data-keywords="filter, circle, x, mark">
             FilterCircleXMark
           </div>
           <FilterCircleXMark />
         </div>
         <div>
-          <div className="icon-name" data-name="FilterSlash">
+          <div className="icon-name" data-keywords="filter, slash">
             FilterSlash
           </div>
           <FilterSlash />
         </div>
         <div>
-          <div className="icon-name" data-name="FlagPennant">
+          <div className="icon-name" data-keywords="flag, pennant">
             FlagPennant
           </div>
           <FlagPennant />
         </div>
         <div>
-          <div className="icon-name" data-name="FolderClosed">
+          <div className="icon-name" data-keywords="folder, closed">
             FolderClosed
           </div>
           <FolderClosed />
         </div>
         <div>
-          <div className="icon-name" data-name="FolderOpen">
+          <div className="icon-name" data-keywords="folder, open">
             FolderOpen
           </div>
           <FolderOpen />
         </div>
         <div>
-          <div className="icon-name" data-name="Gear">
+          <div className="icon-name" data-keywords="gear, settings">
             Gear
           </div>
           <Gear />
         </div>
         <div>
-          <div className="icon-name" data-name="Google">
+          <div className="icon-name" data-keywords="google">
             Google
           </div>
           <Google />
         </div>
         <div>
-          <div className="icon-name" data-name="GridDividers">
+          <div className="icon-name" data-keywords="grid, dividers, dots">
             GridDividers
           </div>
           <GridDividers />
         </div>
         <div>
-          <div className="icon-name" data-name="Grip">
+          <div className="icon-name" data-keywords="grip, handle, dots">
             Grip
           </div>
           <Grip />
         </div>
         <div>
-          <div className="icon-name" data-name="Grid">
+          <div className="icon-name" data-keywords="grid, dots">
             Grid
           </div>
           <Grid />
         </div>
         <div>
-          <div className="icon-name" data-name="House">
+          <div className="icon-name" data-keywords="house, home">
             House
           </div>
           <House />
         </div>
         <div>
-          <div className="icon-name" data-name="Image">
+          <div className="icon-name" data-keywords="image, picture">
             Image
           </div>
           <Image />
         </div>
         <div>
-          <div className="icon-name" data-name="Import">
+          <div className="icon-name" data-keywords="import, arrow">
             Import
           </div>
           <Import />
         </div>
         <div>
-          <div className="icon-name" data-name="InstallGlass">
+          <div className="icon-name" data-keywords="install, glass, wrench, tool">
             InstallGlass
           </div>
           <InstallGlass />
         </div>
         <div>
-          <div className="icon-name" data-name="InstallRail">
+          <div className="icon-name" data-keywords="install, rail, wrench, tool">
             InstallRail
           </div>
           <InstallRail />
         </div>
         <div>
-          <div className="icon-name" data-name="LayerGroup">
+          <div className="icon-name" data-keywords="layer, group">
             LayerGroup
           </div>
           <LayerGroup />
         </div>
         <div>
-          <div className="icon-name" data-name="Library">
+          <div className="icon-name" data-keywords="library, book, bookmark">
             Library
           </div>
           <Library />
         </div>
         <div>
-          <div className="icon-name" data-name="ListSearch">
+          <div className="icon-name" data-keywords="list, search">
             ListSearch
           </div>
           <ListSearch />
         </div>
         <div>
-          <div className="icon-name" data-name="LinkSlash">
+          <div className="icon-name" data-keywords="link, slash, disconnect">
             LinkSlash
           </div>
           <LinkSlash />
         </div>
         <div>
-          <div className="icon-name" data-name="Link">
+          <div className="icon-name" data-keywords="link, connect">
             Link
           </div>
           <Link />
         </div>
         <div>
-          <div className="icon-name" data-name="List">
+          <div className="icon-name" data-keywords="list, bullet">
             List
           </div>
           <List />
         </div>
         <div>
-          <div className="icon-name" data-name="LiftTruck">
+          <div className="icon-name" data-keywords="lift, truck, forklift">
             LiftTruck
           </div>
           <LiftTruck />
         </div>
         <div>
-          <div className="icon-name" data-name="LockOpen">
+          <div className="icon-name" data-keywords="lock, open, security">
             LockOpen
           </div>
           <LockOpen />
         </div>
         <div>
-          <div className="icon-name" data-name="Lock">
+          <div className="icon-name" data-keywords="lock, close, security">
             Lock
           </div>
           <Lock />
         </div>
         <div>
-          <div className="icon-name" data-name="Magnifier">
+          <div className="icon-name" data-keywords="magnifier, search">
             Magnifier
           </div>
           <Magnifier />
         </div>
         <div>
-          <div className="icon-name" data-name="MagnifierPlus">
+          <div className="icon-name" data-keywords="magnifier, plus, search">
             MagnifierPlus
           </div>
           <MagnifierPlus />
         </div>
         <div>
-          <div className="icon-name" data-name="MagnifierMinus">
+          <div className="icon-name" data-keywords="magnifier, minus, search">
             MagnifierMinus
           </div>
           <MagnifierMinus />
         </div>
         <div>
-          <div className="icon-name" data-name="MapPin">
+          <div className="icon-name" data-keywords="map, pin, location">
             MapPin
           </div>
           <MapPin />
         </div>
         <div>
-          <div className="icon-name" data-name="Measuring">
+          <div className="icon-name" data-keywords="measuring, ruler, tool">
             Measuring
           </div>
           <Measuring />
         </div>
         <div>
-          <div className="icon-name" data-name="Members">
+          <div className="icon-name" data-keywords="members, people, users">
             Members
           </div>
           <Members />
         </div>
         <div>
-          <div className="icon-name" data-name="Minus">
+          <div className="icon-name" data-keywords="minus, remove, dash">
             Minus
           </div>
           <Minus />
         </div>
         <div>
-          <div className="icon-name" data-name="Move">
+          <div className="icon-name" data-keywords="move, arrow, folder">
             Move
           </div>
           <Move />
         </div>
         <div>
-          <div className="icon-name" data-name="NoteBadge">
+          <div className="icon-name" data-keywords="note, paper, badge, list">
             NoteBadge
           </div>
           <NoteBadge />
         </div>
         <div>
-          <div className="icon-name" data-name="Note">
+          <div className="icon-name" data-keywords="note, paper, list">
             Note
           </div>
           <Note />
         </div>
         <div>
-          <div className="icon-name" data-name="ObjectGroup">
+          <div className="icon-name" data-keywords="object, group, square">
             ObjectGroup
           </div>
           <ObjectGroup />
         </div>
         <div>
-          <div className="icon-name" data-name="PaintBrush">
+          <div className="icon-name" data-keywords="paint, brush">
             PaintBrush
           </div>
           <PaintBrush />
         </div>
         <div>
-          <div className="icon-name" data-name="Pencil">
+          <div className="icon-name" data-keywords="pencil, write, edit">
             Pencil
           </div>
           <Pencil />
         </div>
         <div>
-          <div className="icon-name" data-name="Plus">
+          <div className="icon-name" data-keywords="plus, add, +">
             Plus
           </div>
           <Plus />
         </div>
         <div>
-          <div className="icon-name" data-name="Print">
+          <div className="icon-name" data-keywords="print, printer">
             Print
           </div>
           <Print />
         </div>
         <div>
-          <div className="icon-name" data-name="ProductionSchedule">
+          <div className="icon-name" data-keywords="production, schedule, timeline">
             ProductionSchedule
           </div>
           <ProductionSchedule />
         </div>
         <div>
-          <div className="icon-name" data-name="Progress">
+          <div className="icon-name" data-keywords="progress, bar, circle">
             Progress
           </div>
           <Progress />
         </div>
         <div>
-          <div className="icon-name" data-name="Projects">
+          <div className="icon-name" data-keywords="projects, article">
             Projects
           </div>
           <Projects />
         </div>
         <div>
-          <div className="icon-name" data-name="QCApprove">
+          <div className="icon-name" data-keywords="qc, approve, check, mark">
             QCApprove
           </div>
           <QCApprove />
         </div>
         <div>
-          <div className="icon-name" data-name="Question">
+          <div className="icon-name" data-keywords="question, mark">
             Question
           </div>
           <Question />
         </div>
         <div>
-          <div className="icon-name" data-name="Refresh">
+          <div className="icon-name" data-keywords="refresh, reload">
             Refresh
           </div>
           <Refresh />
         </div>
         <div>
-          <div className="icon-name" data-name="Reply">
+          <div className="icon-name" data-keywords="reply, chat, arrow, left">
             Reply
           </div>
           <Reply />
         </div>
         <div>
-          <div className="icon-name" data-name="RePost">
+          <div className="icon-name" data-keywords="repost, share, arrows">
             RePost
           </div>
           <RePost />
         </div>
         <div>
-          <div className="icon-name" data-name="RolePermission">
+          <div className="icon-name" data-keywords="role, permission, shield, person, user">
             RolePermission
           </div>
           <RolePermission />
         </div>
         <div>
-          <div className="icon-name" data-name="Save">
+          <div className="icon-name" data-keywords="save, disk">
             Save
           </div>
           <Save />
         </div>
         <div>
-          <div className="icon-name" data-name="ScaleBalanced">
+          <div className="icon-name" data-keywords="scale, balanced, justice">
             ScaleBalanced
           </div>
           <ScaleBalanced />
         </div>
         <div>
-          <div className="icon-name" data-name="Selected">
+          <div className="icon-name" data-keywords="selected, check, mark, circle">
             Selected
           </div>
           <Selected />
         </div>
         <div>
-          <div className="icon-name" data-name="Send">
+          <div className="icon-name" data-keywords="send, arrow, right">
             Send
           </div>
           <Send />
         </div>
         <div>
-          <div className="icon-name" data-name="SidebarLeft">
+          <div className="icon-name" data-keywords="sidebar, left, menu">
             SidebarLeft
           </div>
           <SidebarLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="Sigma">
+          <div className="icon-name" data-keywords="sigma, math, greek">
             Sigma
           </div>
           <Sigma />
         </div>
         <div>
-          <div className="icon-name" data-name="Slash">
+          <div className="icon-name" data-keywords="slash, divide">
             Slash
           </div>
           <Slash />
         </div>
         <div>
-          <div className="icon-name" data-name="SliderUp">
+          <div className="icon-name" data-keywords="slider, up, lines">
             SliderUp
           </div>
           <SliderUp />
         </div>
         <div>
-          <div className="icon-name" data-name="Snowflake">
+          <div className="icon-name" data-keywords="snowflake, winter, cold">
             Snowflake
           </div>
           <Snowflake />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareArrowUpLeft">
+          <div className="icon-name" data-keywords="square, arrow, up, left">
             SquareArrowUpLeft
           </div>
           <SquareArrowUpLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareArrowDownRight">
+          <div className="icon-name" data-keywords="square, arrow, down, right">
             SquareArrowDownRight
           </div>
           <SquareArrowDownRight />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareCaretDown">
+          <div className="icon-name" data-keywords="square, caret, down">
             SquareCaretDown
           </div>
           <SquareCaretDown />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareCaretUp">
+          <div className="icon-name" data-keywords="square, caret, up">
             SquareCaretUp
           </div>
           <SquareCaretUp />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareDownRight">
+          <div className="icon-name" data-keywords="square, down, right, arrow">
             SquareDownRight
           </div>
           <SquareDownRight />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareUpLeft">
+          <div className="icon-name" data-keywords="square, up, left, arrow">
             SquareUpLeft
           </div>
           <SquareUpLeft />
         </div>
         <div>
-          <div className="icon-name" data-name="SquareMinus">
+          <div className="icon-name" data-keywords="square, minus, remove">
             SquareMinus
           </div>
           <SquareMinus />
         </div>
         <div>
-          <div className="icon-name" data-name="Star">
+          <div className="icon-name" data-keywords="star, favorite">
             Star
           </div>
           <Star />
         </div>
         <div>
-          <div className="icon-name" data-name="StarFilled">
+          <div className="icon-name" data-keywords="star, favorite">
             StarFilled
           </div>
           <StarFilled />
         </div>
         <div>
-          <div className="icon-name" data-name="Transfer">
+          <div className="icon-name" data-keywords="transfer, arrow">
             Transfer
           </div>
           <Transfer />
         </div>
         <div>
-          <div className="icon-name" data-name="Trashcan">
+          <div className="icon-name" data-keywords="trashcan, delete, remove">
             Trashcan
           </div>
           <Trashcan />
         </div>
         <div>
-          <div className="icon-name" data-name="Treeview">
+          <div className="icon-name" data-keywords="treeview, tree, structure">
             Treeview
           </div>
           <Treeview />
         </div>
         <div>
-          <div className="icon-name" data-name="Triangle">
+          <div className="icon-name" data-keywords="triangle">
             Triangle
           </div>
           <Triangle />
         </div>
         <div>
-          <div className="icon-name" data-name="Upload">
+          <div className="icon-name" data-keywords="upload, arrow">
             Upload
           </div>
           <Upload />
         </div>
         <div>
-          <div className="icon-name" data-name="User">
+          <div className="icon-name" data-keywords="user, person">
             User
           </div>
           <User />
         </div>
         <div>
-          <div className="icon-name" data-name="ValueEngineering">
+          <div className="icon-name" data-keywords="value, engineering">
             ValueEngineering
           </div>
           <ValueEngineering />
         </div>
         <div>
-          <div className="icon-name" data-name="Warning">
+          <div className="icon-name" data-keywords="warning, exclamation, triangle">
             Warning
           </div>
           <Warning />
         </div>
         <div>
-          <div className="icon-name" data-name="XMark">
+          <div className="icon-name" data-keywords="x, mark, close">
             XMark
           </div>
           <XMark />
