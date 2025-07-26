@@ -3,7 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve, basename } from "path";
 
-import { dependencies, peerDependencies } from "./package.json";
+import { peerDependencies } from "./package.json";
 
 function getComponentName(entryName: string): string {
   const name = basename(entryName);
@@ -31,7 +31,7 @@ export default defineConfig({
       },
     },
     rollupOptions: {
-      external: [...Object.keys(peerDependencies), ...Object.keys(dependencies), "react/jsx-runtime"],
+      external: [...Object.keys(peerDependencies), "react/jsx-runtime"],
       output: { preserveModules: true, exports: "named" },
     },
     target: "esnext",
