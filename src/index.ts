@@ -5,6 +5,7 @@ export { AlignLeft } from "./components/AlignLeft";
 export { AlignRight } from "./components/AlignRight";
 export { Archive } from "./components/Archive";
 export { ArrowLeft } from "./components/ArrowLeft";
+export { ArrowLeftFromLine } from "./components/ArrowLeftFromLine";
 export { ArrowLeftToLine } from "./components/ArrowLeftToLine";
 export { ArrowRight } from "./components/ArrowRight";
 export { ArrowRightFromLine } from "./components/ArrowRightFromLine";
