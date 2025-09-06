@@ -159,6 +159,19 @@ import { Warehouse } from "./Warehouse";
 import { Warning } from "./Warning";
 import { WordFile } from "./WordFile";
 import { XMark } from "./XMark";
+import { QuarterPast } from "./QuarterPast";
+import { UserPlus } from "./UserPlus";
+import { Submitted } from "./Submitted";
+import { RFI } from "./RFI";
+import { CAD } from "./CAD";
+import { Sign } from "./Sign";
+import { Review } from "./Review";
+import { ColorSample } from "./ColorSample";
+import { Shield } from "./Shield";
+import { Stairs } from "./Stairs";
+import { ShapedGlass } from "./ShapedGlass";
+import { Logout } from "./Logout";
+import { ChartBar } from "./ChartBar";
 
 const meta: Meta = {
   title: "Icons",
@@ -350,6 +363,12 @@ export const Icons = () => {
           <Breakdown />
         </div>
         <div>
+          <div className="icon-name" data-keywords="CAD, file, autocad">
+            CAD
+          </div>
+          <CAD />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="calendar, date">
             Calendar
           </div>
@@ -360,6 +379,12 @@ export const Icons = () => {
             Camera
           </div>
           <Camera />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="chart, bar, graph, justify, columns">
+            ChartBar
+          </div>
+          <ChartBar />
         </div>
         <div>
           <div className="icon-name" data-keywords="check, mark">
@@ -474,6 +499,12 @@ export const Icons = () => {
             Clone
           </div>
           <Clone />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="color, sample, picker, dropper">
+            ColorSample
+          </div>
+          <ColorSample />
         </div>
         <div>
           <div className="icon-name" data-keywords="comma">
@@ -806,6 +837,12 @@ export const Icons = () => {
           <Lock />
         </div>
         <div>
+          <div className="icon-name" data-keywords="logout, sign out, exit, arrow, left">
+            Logout
+          </div>
+          <Logout />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="magnifier, search">
             Magnifier
           </div>
@@ -920,6 +957,12 @@ export const Icons = () => {
           <QCApprove />
         </div>
         <div>
+          <div className="icon-name" data-keywords="clock, time, quarter, past">
+            QuarterPast
+          </div>
+          <QuarterPast />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="question, mark">
             Question
           </div>
@@ -956,6 +999,18 @@ export const Icons = () => {
           <Requisition />
         </div>
         <div>
+          <div className="icon-name" data-keywords="review, glasses, eye">
+            Review
+          </div>
+          <Review />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="RFI, file">
+            RFI
+          </div>
+          <RFI />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="role, permission, shield, person, user">
             RolePermission
           </div>
@@ -986,6 +1041,18 @@ export const Icons = () => {
           <Send />
         </div>
         <div>
+          <div className="icon-name" data-keywords="glass, roller, paint, tool">
+            ShapedGlass
+          </div>
+          <ShapedGlass />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="shield, security, safety">
+            Shield
+          </div>
+          <Shield />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="sidebar, left, menu">
             SidebarLeft
           </div>
@@ -996,6 +1063,12 @@ export const Icons = () => {
             Sigma
           </div>
           <Sigma />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="sign, pen, contract, ink">
+            Sign
+          </div>
+          <Sign />
         </div>
         <div>
           <div className="icon-name" data-keywords="slash, divide">
@@ -1064,6 +1137,12 @@ export const Icons = () => {
           <SquareMinus />
         </div>
         <div>
+          <div className="icon-name" data-keywords="stairs, steps, elevation">
+            Stairs
+          </div>
+          <Stairs />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="star, favorite">
             Star
           </div>
@@ -1080,6 +1159,12 @@ export const Icons = () => {
             Stock
           </div>
           <Stock />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="submitted, arrow, up, file">
+            Submitted
+          </div>
+          <Submitted />
         </div>
         <div>
           <div className="icon-name" data-keywords="arrow up, arrow down, transfer, exchange">
@@ -1128,6 +1213,12 @@ export const Icons = () => {
             User
           </div>
           <User />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="user, person, plus, add, +">
+            UserPlus
+          </div>
+          <UserPlus />
         </div>
         <div>
           <div className="icon-name" data-keywords="value, engineering">
