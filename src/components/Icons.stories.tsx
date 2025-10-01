@@ -172,6 +172,8 @@ import { Stairs } from "./Stairs";
 import { ShapedGlass } from "./ShapedGlass";
 import { Logout } from "./Logout";
 import { ChartBar } from "./ChartBar";
+import { Phone } from "./Phone";
+import { PriceQuote } from "./PriceQuote";
 
 const meta: Meta = {
   title: "Icons",
@@ -925,6 +927,18 @@ export const Icons = () => {
             Plus
           </div>
           <Plus />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="phone, call, communication">
+            Phone
+          </div>
+          <Phone />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="price, quote, dollar, money">
+            PriceQuote
+          </div>
+          <PriceQuote />
         </div>
         <div>
           <div className="icon-name" data-keywords="print, printer">

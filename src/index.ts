@@ -117,6 +117,8 @@ export { PaintBrush } from "./components/PaintBrush";
 export { Pencil } from "./components/Pencil";
 export { Plus } from "./components/Plus";
 export { Print } from "./components/Print";
+export { Phone } from "./components/Phone";
+export { PriceQuote } from "./components/PriceQuote";
 export { ProductionSchedule } from "./components/ProductionSchedule";
 export { Progress } from "./components/Progress";
 export { Projects } from "./components/Projects";
