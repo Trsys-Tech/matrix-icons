@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const FlagPennant: React.FC<SVGProps<SVGSVGElement>> = ({ ...props }) => {
+export const Flag: React.FC<SVGProps<SVGSVGElement>> = ({ ...props }) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" {...props}>
       <path
