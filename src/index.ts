@@ -76,6 +76,7 @@ export { FileLines } from "./components/FileLines";
 export { Filter } from "./components/Filter";
 export { FilterCircleXMark } from "./components/FilterCircleXMark";
 export { FilterSlash } from "./components/FilterSlash";
+export { Flag } from "./components/Flag";
 export { FlagPennant } from "./components/FlagPennant";
 export { FolderClosed } from "./components/FolderClosed";
 export { FolderOpen } from "./components/FolderOpen";

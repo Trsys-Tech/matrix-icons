@@ -75,6 +75,7 @@ import { FileLines } from "./FileLines";
 import { Filter } from "./Filter";
 import { FilterCircleXMark } from "./FilterCircleXMark";
 import { FilterSlash } from "./FilterSlash";
+import { Flag } from "./Flag";
 import { FlagPennant } from "./FlagPennant";
 import { FolderClosed } from "./FolderClosed";
 import { FolderOpen } from "./FolderOpen";
@@ -687,6 +688,12 @@ export const Icons = () => {
             FilterSlash
           </div>
           <FilterSlash />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="flag">
+            Flag
+          </div>
+          <Flag />
         </div>
         <div>
           <div className="icon-name" data-keywords="flag, pennant">
