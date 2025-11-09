@@ -52,6 +52,8 @@ import { Company } from "./Company";
 import { Connect } from "./Connect";
 import { Contract } from "./Contract";
 import { Copy } from "./Copy";
+import { CrownFill } from "./CrownFill";
+import { CrownOutline } from "./CrownOutline";
 import { Dashboard } from "./Dashboard";
 import { Deficiency } from "./Deficiency";
 import { DeficiencyList } from "./DeficiencyList";
@@ -112,6 +114,7 @@ import { Move } from "./Move";
 import { Note } from "./Note";
 import { NoteBadge } from "./NoteBadge";
 import { ObjectGroup } from "./ObjectGroup";
+import { Others } from "./Others";
 import { PaintBrush } from "./PaintBrush";
 import { Pencil } from "./Pencil";
 import { Plus } from "./Plus";
@@ -552,6 +555,18 @@ export const Icons = () => {
           <Copy />
         </div>
         <div>
+          <div className="icon-name" data-keywords="crown, king, queen, royal">
+            CrownOutline
+          </div>
+          <CrownOutline />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="crown, king, queen, royal">
+            CrownFill
+          </div>
+          <CrownFill />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="dashboard">
             Dashboard
           </div>
@@ -916,6 +931,12 @@ export const Icons = () => {
             ObjectGroup
           </div>
           <ObjectGroup />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="square, group, squares, other">
+            Others
+          </div>
+          <Others />
         </div>
         <div>
           <div className="icon-name" data-keywords="paint, brush">
