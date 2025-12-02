@@ -58,6 +58,8 @@ import { Dashboard } from "./Dashboard";
 import { Deficiency } from "./Deficiency";
 import { DeficiencyList } from "./DeficiencyList";
 import { Delivery } from "./Delivery";
+import { DollarBill } from "./DollarBill";
+import { DollarGear } from "./DollarGear";
 import { Download } from "./Download";
 import { Driver } from "./Driver";
 import { Elipsis } from "./Elipsis";
@@ -124,6 +126,7 @@ import { Progress } from "./Progress";
 import { Projects } from "./Projects";
 import { QCApprove } from "./QCApprove";
 import { Question } from "./Question";
+import { Receipt } from "./Receipt";
 import { Refresh } from "./Refresh";
 import { Reply } from "./Reply";
 import { Reports } from "./Reports";
@@ -591,6 +594,18 @@ export const Icons = () => {
           <Delivery />
         </div>
         <div>
+          <div className="icon-name" data-keywords="dollar, bill, money, list">
+            DollarBill
+          </div>
+          <DollarBill />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="dollar, gear, money, settings">
+            DollarGear
+          </div>
+          <DollarGear />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="download, arrow">
             Download
           </div>
@@ -1009,6 +1024,12 @@ export const Icons = () => {
             Question
           </div>
           <Question />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="receipt, list, bill">
+            Receipt
+          </div>
+          <Receipt />
         </div>
         <div>
           <div className="icon-name" data-keywords="refresh, reload">
