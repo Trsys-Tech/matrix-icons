@@ -2,6 +2,7 @@ import * as React from "react";
 import type { Meta } from "@storybook/react";
 
 import { AdobeAcrobat } from "./AdobeAcrobat";
+import { AIGenerate } from "./AIGenerate";
 import { AlignCenter } from "./AlignCenter";
 import { AlignJustify } from "./AlignJustify";
 import { AlignLeft } from "./AlignLeft";
@@ -72,6 +73,7 @@ import { Expand } from "./Expand";
 import { Export } from "./Export";
 import { Eye } from "./Eye";
 import { EyeSlash } from "./EyeSlash";
+import { FileAttachement } from "./FileAttachement";
 import { FileChart } from "./FileChart";
 import { FileChartColumn } from "./FileChartColumn";
 import { FileExcel } from "./FileExcel";
@@ -89,6 +91,7 @@ import { Google } from "./Google";
 import { Grid } from "./Grid";
 import { GridDividers } from "./GridDividers";
 import { Grip } from "./Grip";
+import { Hourglass } from "./Hourglass";
 import { House } from "./House";
 import { Image } from "./Image";
 import { ImageFile } from "./ImageFile";
@@ -105,6 +108,8 @@ import { List } from "./List";
 import { ListSearch } from "./ListSearch";
 import { Lock } from "./Lock";
 import { LockOpen } from "./LockOpen";
+import { Logout } from "./Logout";
+import { LOI } from "./LOI";
 import { Magnifier } from "./Magnifier";
 import { MagnifierMinus } from "./MagnifierMinus";
 import { MagnifierPlus } from "./MagnifierPlus";
@@ -118,13 +123,18 @@ import { NoteBadge } from "./NoteBadge";
 import { ObjectGroup } from "./ObjectGroup";
 import { Others } from "./Others";
 import { PaintBrush } from "./PaintBrush";
+import { Parties } from "./Parties";
 import { Pencil } from "./Pencil";
+import { Phone } from "./Phone";
 import { Plus } from "./Plus";
+import { PriceQuote } from "./PriceQuote";
 import { Print } from "./Print";
 import { ProductionSchedule } from "./ProductionSchedule";
 import { Progress } from "./Progress";
 import { Projects } from "./Projects";
 import { QCApprove } from "./QCApprove";
+import { Qualify } from "./Qualify";
+import { QuarterPast } from "./QuarterPast";
 import { Question } from "./Question";
 import { Receipt } from "./Receipt";
 import { Refresh } from "./Refresh";
@@ -137,8 +147,12 @@ import { Save } from "./Save";
 import { ScaleBalanced } from "./ScaleBalanced";
 import { Selected } from "./Selected";
 import { Send } from "./Send";
+import { ShapedGlass } from "./ShapedGlass";
+import { Shield } from "./Shield";
 import { SidebarLeft } from "./SidebarLeft";
 import { Sigma } from "./Sigma";
+import { Sign } from "./Sign";
+import { Signature } from "./Signature";
 import { Slash } from "./Slash";
 import { SliderUp } from "./SliderUp";
 import { Snowflake } from "./Snowflake";
@@ -150,9 +164,11 @@ import { SquareCaretUp } from "./SquareCaretUp";
 import { SquareDownRight } from "./SquareDownRight";
 import { SquareMinus } from "./SquareMinus";
 import { SquareUpLeft } from "./SquareUpLeft";
+import { Stairs } from "./Stairs";
 import { Star } from "./Star";
 import { StarFilled } from "./StarFilled";
 import { Stock } from "./Stock";
+import { Submittal } from "./Submittal";
 import { Transactions } from "./Transactions";
 import { Transfer } from "./Transfer";
 import { TransferList } from "./TransferList";
@@ -166,21 +182,13 @@ import { Warehouse } from "./Warehouse";
 import { Warning } from "./Warning";
 import { WordFile } from "./WordFile";
 import { XMark } from "./XMark";
-import { QuarterPast } from "./QuarterPast";
 import { UserPlus } from "./UserPlus";
 import { Submitted } from "./Submitted";
 import { RFI } from "./RFI";
 import { CAD } from "./CAD";
-import { Sign } from "./Sign";
 import { Review } from "./Review";
 import { ColorSample } from "./ColorSample";
-import { Shield } from "./Shield";
-import { Stairs } from "./Stairs";
-import { ShapedGlass } from "./ShapedGlass";
-import { Logout } from "./Logout";
 import { ChartBar } from "./ChartBar";
-import { Phone } from "./Phone";
-import { PriceQuote } from "./PriceQuote";
 
 const meta: Meta = {
   title: "Icons",
@@ -238,6 +246,12 @@ export const Icons = () => {
             AdobeAcrobat
           </div>
           <AdobeAcrobat />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="ai, generate, star, magic">
+            AIGenerate
+          </div>
+          <AIGenerate />
         </div>
         <div>
           <div className="icon-name" data-keywords="align, center">
@@ -678,6 +692,12 @@ export const Icons = () => {
           <EyeSlash />
         </div>
         <div>
+          <div className="icon-name" data-keywords="file, attachment, paperclip">
+            FileAttachement
+          </div>
+          <FileAttachement />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="file, chart">
             FileChart
           </div>
@@ -772,6 +792,12 @@ export const Icons = () => {
             Grip
           </div>
           <Grip />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="hourglass, timer, wait">
+            Hourglass
+          </div>
+          <Hourglass />
         </div>
         <div>
           <div className="icon-name" data-keywords="grid, dots">
@@ -882,6 +908,12 @@ export const Icons = () => {
           <Logout />
         </div>
         <div>
+          <div className="icon-name" data-keywords="LOI, letter, intent">
+            LOI
+          </div>
+          <LOI />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="magnifier, search">
             Magnifier
           </div>
@@ -960,6 +992,12 @@ export const Icons = () => {
           <PaintBrush />
         </div>
         <div>
+          <div className="icon-name" data-keywords="parties, group, people, house, home">
+            Parties
+          </div>
+          <Parties />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="pencil, write, edit">
             Pencil
           </div>
@@ -1012,6 +1050,12 @@ export const Icons = () => {
             QCApprove
           </div>
           <QCApprove />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="qualify, approve, check, mark">
+            Qualify
+          </div>
+          <Qualify />
         </div>
         <div>
           <div className="icon-name" data-keywords="clock, time, quarter, past">
@@ -1134,6 +1178,12 @@ export const Icons = () => {
           <Sign />
         </div>
         <div>
+          <div className="icon-name" data-keywords="sign, signature, pen, contract, ink">
+            Signature
+          </div>
+          <Signature />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="slash, divide">
             Slash
           </div>
@@ -1222,6 +1272,12 @@ export const Icons = () => {
             Stock
           </div>
           <Stock />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="submittal, submit, file, out">
+            Submittal
+          </div>
+          <Submittal />
         </div>
         <div>
           <div className="icon-name" data-keywords="submitted, arrow, up, file">
