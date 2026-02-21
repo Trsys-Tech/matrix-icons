@@ -19,14 +19,17 @@ import { ArrowsMinimize } from "./ArrowsMinimize";
 import { ArrowsOutward } from "./ArrowsOutward";
 import { Assemblies } from "./Assemblies";
 import { Attachment } from "./Attachment";
+import { Attendance } from "./Attendance";
 import { Ban } from "./Ban";
 import { Bars } from "./Bars";
 import { BarsSort } from "./BarsSort";
 import { Bell } from "./Bell";
 import { Board } from "./Board";
 import { Breakdown } from "./Breakdown";
+import { CAD } from "./CAD";
 import { Calendar } from "./Calendar";
 import { Camera } from "./Camera";
+import { ChartBar } from "./ChartBar";
 import { Check } from "./Check";
 import { ChevronDown } from "./ChevronDown";
 import { ChevronLeft } from "./ChevronLeft";
@@ -46,6 +49,8 @@ import { CirclePlus } from "./CirclePlus";
 import { CircleXmark } from "./CircleXmark";
 import { Clock } from "./Clock";
 import { Clone } from "./Clone";
+import { Cloudy } from "./Cloudy";
+import { ColorSample } from "./ColorSample";
 import { Comma } from "./Comma";
 import { Comments } from "./Comments";
 import { CommentsBadge } from "./CommentsBadge";
@@ -53,6 +58,7 @@ import { Company } from "./Company";
 import { Connect } from "./Connect";
 import { Contract } from "./Contract";
 import { Copy } from "./Copy";
+import { CopyWithArrow } from "./CopyWithArrow";
 import { CrownFill } from "./CrownFill";
 import { CrownOutline } from "./CrownOutline";
 import { Dashboard } from "./Dashboard";
@@ -93,12 +99,15 @@ import { GridDividers } from "./GridDividers";
 import { Grip } from "./Grip";
 import { Hourglass } from "./Hourglass";
 import { House } from "./House";
+import { Humidity } from "./Humidity";
 import { Image } from "./Image";
 import { ImageFile } from "./ImageFile";
 import { Import } from "./Import";
 import { InstallGlass } from "./InstallGlass";
 import { InstallRail } from "./InstallRail";
+import { IPM } from "./IPM";
 import { Items } from "./Items";
+import { Jobs } from "./Jobs";
 import { LayerGroup } from "./LayerGroup";
 import { Library } from "./Library";
 import { LiftTruck } from "./LiftTruck";
@@ -136,12 +145,15 @@ import { QCApprove } from "./QCApprove";
 import { Qualify } from "./Qualify";
 import { QuarterPast } from "./QuarterPast";
 import { Question } from "./Question";
+import { Rainy } from "./Rainy";
 import { Receipt } from "./Receipt";
 import { Refresh } from "./Refresh";
 import { Reply } from "./Reply";
 import { Reports } from "./Reports";
 import { RePost } from "./RePost";
 import { Requisition } from "./Requisition";
+import { Review } from "./Review";
+import { RFI } from "./RFI";
 import { RolePermission } from "./RolePermission";
 import { Save } from "./Save";
 import { ScaleBalanced } from "./ScaleBalanced";
@@ -153,9 +165,12 @@ import { SidebarLeft } from "./SidebarLeft";
 import { Sigma } from "./Sigma";
 import { Sign } from "./Sign";
 import { Signature } from "./Signature";
+import { Sites } from "./Sites";
+import { Share } from "./Share";
 import { Slash } from "./Slash";
 import { SliderUp } from "./SliderUp";
 import { Snowflake } from "./Snowflake";
+import { Snowy } from "./Snowy";
 import { Spinner } from "./Spinner";
 import { SquareArrowDownRight } from "./SquareArrowDownRight";
 import { SquareArrowUpLeft } from "./SquareArrowUpLeft";
@@ -169,26 +184,25 @@ import { Star } from "./Star";
 import { StarFilled } from "./StarFilled";
 import { Stock } from "./Stock";
 import { Submittal } from "./Submittal";
+import { Submitted } from "./Submitted";
+import { Sunny } from "./Sunny";
 import { Transactions } from "./Transactions";
 import { Transfer } from "./Transfer";
 import { TransferList } from "./TransferList";
 import { Trashcan } from "./Trashcan";
 import { Treeview } from "./Treeview";
 import { Triangle } from "./Triangle";
+import { Type } from "./Type";
 import { Upload } from "./Upload";
 import { User } from "./User";
+import { UserPlus } from "./UserPlus";
 import { ValueEngineering } from "./ValueEngineering";
 import { Warehouse } from "./Warehouse";
 import { Warning } from "./Warning";
+import { Wind } from "./Wind";
 import { WordFile } from "./WordFile";
+import { Worker } from "./Worker";
 import { XMark } from "./XMark";
-import { UserPlus } from "./UserPlus";
-import { Submitted } from "./Submitted";
-import { RFI } from "./RFI";
-import { CAD } from "./CAD";
-import { Review } from "./Review";
-import { ColorSample } from "./ColorSample";
-import { ChartBar } from "./ChartBar";
 
 const meta: Meta = {
   title: "Icons",
@@ -348,6 +362,12 @@ export const Icons = () => {
             Attachment
           </div>
           <Attachment />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="attendance, user, clock">
+            Attendance
+          </div>
+          <Attendance />
         </div>
         <div>
           <div className="icon-name" data-keywords="ban, stop">
@@ -524,6 +544,12 @@ export const Icons = () => {
           <Clone />
         </div>
         <div>
+          <div className="icon-name" data-keywords="cloud, weather, cloudy">
+            Cloudy
+          </div>
+          <Cloudy />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="color, sample, picker, dropper">
             ColorSample
           </div>
@@ -570,6 +596,12 @@ export const Icons = () => {
             Copy
           </div>
           <Copy />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="copy, duplicate, arrow">
+            CopyWithArrow
+          </div>
+          <CopyWithArrow />
         </div>
         <div>
           <div className="icon-name" data-keywords="crown, king, queen, royal">
@@ -812,6 +844,12 @@ export const Icons = () => {
           <House />
         </div>
         <div>
+          <div className="icon-name" data-keywords="humidity, water, droplet">
+            Humidity
+          </div>
+          <Humidity />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="image, picture">
             Image
           </div>
@@ -842,10 +880,22 @@ export const Icons = () => {
           <InstallRail />
         </div>
         <div>
+          <div className="icon-name" data-keywords="ipm, project management">
+            IPM
+          </div>
+          <IPM />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="items, box">
             Items
           </div>
           <Items />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="jobs, work, tasks, list">
+            Jobs
+          </div>
+          <Jobs />
         </div>
         <div>
           <div className="icon-name" data-keywords="layer, group">
@@ -1070,6 +1120,12 @@ export const Icons = () => {
           <Question />
         </div>
         <div>
+          <div className="icon-name" data-keywords="rain, weather, cloud">
+            Rainy
+          </div>
+          <Rainy />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="receipt, list, bill">
             Receipt
           </div>
@@ -1154,6 +1210,12 @@ export const Icons = () => {
           <ShapedGlass />
         </div>
         <div>
+          <div className="icon-name" data-keywords="share">
+            Share
+          </div>
+          <Share />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="shield, security, safety">
             Shield
           </div>
@@ -1184,6 +1246,12 @@ export const Icons = () => {
           <Signature />
         </div>
         <div>
+          <div className="icon-name" data-keywords="sites, location, map, place">
+            Sites
+          </div>
+          <Sites />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="slash, divide">
             Slash
           </div>
@@ -1200,6 +1268,12 @@ export const Icons = () => {
             Snowflake
           </div>
           <Snowflake />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="snow, winter, cold, cloud">
+            Snowy
+          </div>
+          <Snowy />
         </div>
         <div>
           <div className="icon-name" data-keywords="spinner, refresh">
@@ -1286,6 +1360,12 @@ export const Icons = () => {
           <Submitted />
         </div>
         <div>
+          <div className="icon-name" data-keywords="sun, weather, bright">
+            Sunny
+          </div>
+          <Sunny />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="arrow up, arrow down, transfer, exchange">
             Transactions
           </div>
@@ -1320,6 +1400,12 @@ export const Icons = () => {
             Triangle
           </div>
           <Triangle />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="type, text, font">
+            Type
+          </div>
+          <Type />
         </div>
         <div>
           <div className="icon-name" data-keywords="upload, arrow">
@@ -1358,10 +1444,22 @@ export const Icons = () => {
           <Warning />
         </div>
         <div>
+          <div className="icon-name" data-keywords="wind, weather, breeze">
+            Wind
+          </div>
+          <Wind />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="word, file">
             WordFile
           </div>
           <WordFile />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="worker, person, hat, construction">
+            Worker
+          </div>
+          <Worker />
         </div>
         <div>
           <div className="icon-name" data-keywords="x, mark, close">
