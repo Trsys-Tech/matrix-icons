@@ -52,6 +52,21 @@ cd matrix-icons
 npm install
 ```
 
+### React Version Support
+
+This library supports both React 18 (`^18.3.1`) and React 19 (`^19.2.4`) as peer dependencies. The library is built as ESM with React externalized, meaning it does not bundle React and relies on the consumer's installed React version.
+
+**Known Limitation:** During development and testing, we use React 18 type definitions even when testing against React 19 runtime. This is due to a transitive dependency type incompatibility in the Storybook ecosystem:
+
+```
+@storybook/addon-essentials
+  → @storybook/addon-docs
+    → @mdx-js/mdx
+      → @types/mdx (does not support React 19 types)
+```
+
+Since Storybook is dev-only, this limitation does not affect the shipped library. Runtime compatibility with React 19 is fully validated during the build process.
+
 ## Icons
 
 The library includes a variety of icons. Here are some examples:

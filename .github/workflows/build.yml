@@ -16,6 +16,11 @@ jobs:
             react-types-major: 18
           - react-version: 19.2.4
             react-types-major: 18
+            # NOTE: react-types-major stays at 18 even for React 19 testing due to a transitive
+            # dependency type incompatibility in the Storybook ecosystem:
+            # @storybook/addon-essentials → @storybook/addon-docs → @mdx-js/mdx → @types/mdx
+            # The @types/mdx typings do not work with React 19 type definitions.
+            # This is dev-only (Storybook), so React 19 runtime validation still occurs.
 
     steps:
       - name: Checkout repository
