@@ -14,8 +14,8 @@ jobs:
         include:
           - react-version: 18.3.1
             react-types-major: 18
-          - react-version: 19.0.0
-            react-types-major: 19
+          - react-version: 19.2.4
+            react-types-major: 18
 
     steps:
       - name: Checkout repository
