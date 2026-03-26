@@ -41,9 +41,9 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Create dist branch if it doesn't exist
-          git branch -D dist || true
-          git switch -c dist
+          # Fetch latest dist branch
+          git fetch origin dist || true
+          git checkout -B dist origin/dist || git checkout -b dist
 
           # Remove all files except dist folder and package.json
           find . -maxdepth 1 ! -name 'dist' ! -name 'package.json' ! -name '.' ! -name .git | xargs rm -rf
