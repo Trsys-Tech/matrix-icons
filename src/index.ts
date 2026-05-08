@@ -200,4 +200,5 @@ export { Warning } from "./components/Warning";
 export { Wind } from "./components/Wind";
 export { WordFile } from "./components/WordFile";
 export { Worker } from "./components/Worker";
+export { WorkPermit } from "./components/WorkPermit";
 export { XMark } from "./components/XMark";

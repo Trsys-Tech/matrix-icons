@@ -202,6 +202,7 @@ import { Warning } from "./Warning";
 import { Wind } from "./Wind";
 import { WordFile } from "./WordFile";
 import { Worker } from "./Worker";
+import { WorkPermit } from "./WorkPermit";
 import { XMark } from "./XMark";
 
 const meta: Meta = {
@@ -1460,6 +1461,12 @@ export const Icons = () => {
             Worker
           </div>
           <Worker />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="work permit, document, hat, construction">
+            WorkPermit
+          </div>
+          <WorkPermit />
         </div>
         <div>
           <div className="icon-name" data-keywords="x, mark, close">
