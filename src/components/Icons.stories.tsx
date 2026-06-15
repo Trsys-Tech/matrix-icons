@@ -29,6 +29,7 @@ import { Breakdown } from "./Breakdown";
 import { CAD } from "./CAD";
 import { Calendar } from "./Calendar";
 import { Camera } from "./Camera";
+import { Certificate } from "./Certificate";
 import { ChartBar } from "./ChartBar";
 import { Check } from "./Check";
 import { ChevronDown } from "./ChevronDown";
@@ -91,9 +92,12 @@ import { Flag } from "./Flag";
 import { FlagPennant } from "./FlagPennant";
 import { FolderClosed } from "./FolderClosed";
 import { FolderOpen } from "./FolderOpen";
+import { FolderPlus } from "./FolderPlus";
 import { Forward } from "./Forward";
 import { Gear } from "./Gear";
 import { Google } from "./Google";
+import { GreaterOrEqual } from "./GreaterOrEqual";
+import { GreaterThan } from "./GreaterThan";
 import { Grid } from "./Grid";
 import { GridDividers } from "./GridDividers";
 import { Grip } from "./Grip";
@@ -102,6 +106,7 @@ import { House } from "./House";
 import { Humidity } from "./Humidity";
 import { Image } from "./Image";
 import { ImageFile } from "./ImageFile";
+import { Identity } from "./Identity";
 import { Import } from "./Import";
 import { InstallGlass } from "./InstallGlass";
 import { InstallRail } from "./InstallRail";
@@ -110,6 +115,7 @@ import { Items } from "./Items";
 import { Jobs } from "./Jobs";
 import { LayerGroup } from "./LayerGroup";
 import { Library } from "./Library";
+import { LessThan } from "./LessThan";
 import { LiftTruck } from "./LiftTruck";
 import { Link } from "./Link";
 import { LinkSlash } from "./LinkSlash";
@@ -131,6 +137,7 @@ import { Note } from "./Note";
 import { NoteBadge } from "./NoteBadge";
 import { ObjectGroup } from "./ObjectGroup";
 import { Others } from "./Others";
+import { Pause } from "./Pause";
 import { PaintBrush } from "./PaintBrush";
 import { Parties } from "./Parties";
 import { Pencil } from "./Pencil";
@@ -141,7 +148,9 @@ import { Print } from "./Print";
 import { ProductionSchedule } from "./ProductionSchedule";
 import { Progress } from "./Progress";
 import { Projects } from "./Projects";
+import { QAApproveDuo } from "./QAApproveDuo";
 import { QCApprove } from "./QCApprove";
+import { QCApproveDuo } from "./QCApproveDuo";
 import { Qualify } from "./Qualify";
 import { QuarterPast } from "./QuarterPast";
 import { Question } from "./Question";
@@ -161,11 +170,14 @@ import { Selected } from "./Selected";
 import { Send } from "./Send";
 import { ShapedGlass } from "./ShapedGlass";
 import { Shield } from "./Shield";
+import { ShieldGlobal } from "./ShieldGlobal";
+import { ShieldUser } from "./ShieldUser";
 import { SidebarLeft } from "./SidebarLeft";
 import { Sigma } from "./Sigma";
 import { Sign } from "./Sign";
 import { Signature } from "./Signature";
 import { Sites } from "./Sites";
+import { Sitemap } from "./Sitemap";
 import { Share } from "./Share";
 import { Slash } from "./Slash";
 import { SliderUp } from "./SliderUp";
@@ -202,6 +214,7 @@ import { Warning } from "./Warning";
 import { Wind } from "./Wind";
 import { WordFile } from "./WordFile";
 import { Worker } from "./Worker";
+import { WorkerApproveDuo } from "./WorkerApproveDuo";
 import { WorkPermit } from "./WorkPermit";
 import { XMark } from "./XMark";
 
@@ -423,6 +436,12 @@ export const Icons = () => {
             Camera
           </div>
           <Camera />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="certificate, award, badge">
+            Certificate
+          </div>
+          <Certificate />
         </div>
         <div>
           <div className="icon-name" data-keywords="chart, bar, graph, justify, columns">
@@ -797,6 +816,12 @@ export const Icons = () => {
           <FolderOpen />
         </div>
         <div>
+          <div className="icon-name" data-keywords="folder, plus, add, +">
+            FolderPlus
+          </div>
+          <FolderPlus />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="forward, reply, arrow, right">
             Forward
           </div>
@@ -813,6 +838,18 @@ export const Icons = () => {
             Google
           </div>
           <Google />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="greater, equal, than, arrow, right">
+            GreaterOrEqual
+          </div>
+          <GreaterOrEqual />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="greater, than, arrow, right">
+            GreaterThan
+          </div>
+          <GreaterThan />
         </div>
         <div>
           <div className="icon-name" data-keywords="grid, dividers, dots">
@@ -863,6 +900,12 @@ export const Icons = () => {
           <ImageFile />
         </div>
         <div>
+          <div className="icon-name" data-keywords="identity, card, id, person, shield">
+            Identity
+          </div>
+          <Identity />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="import, arrow">
             Import
           </div>
@@ -909,6 +952,12 @@ export const Icons = () => {
             Library
           </div>
           <Library />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="less, than, arrow, left">
+            LessThan
+          </div>
+          <LessThan />
         </div>
         <div>
           <div className="icon-name" data-keywords="list, search">
@@ -1037,6 +1086,12 @@ export const Icons = () => {
           <Others />
         </div>
         <div>
+          <div className="icon-name" data-keywords="pause, play, video, media">
+            Pause
+          </div>
+          <Pause />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="paint, brush">
             PaintBrush
           </div>
@@ -1097,10 +1152,22 @@ export const Icons = () => {
           <Projects />
         </div>
         <div>
+          <div className="icon-name" data-keywords="qa, approve, check, mark, duo tone">
+            QAApproveDuo
+          </div>
+          <QAApproveDuo />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="qc, approve, check, mark">
             QCApprove
           </div>
           <QCApprove />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="qc, approve, check, mark, duo tone">
+            QCApproveDuo
+          </div>
+          <QCApproveDuo />
         </div>
         <div>
           <div className="icon-name" data-keywords="qualify, approve, check, mark">
@@ -1223,6 +1290,18 @@ export const Icons = () => {
           <Shield />
         </div>
         <div>
+          <div className="icon-name" data-keywords="shield, global, world, security">
+            ShieldGlobal
+          </div>
+          <ShieldGlobal />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="shield, user, person, security">
+            ShieldUser
+          </div>
+          <ShieldUser />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="sidebar, left, menu">
             SidebarLeft
           </div>
@@ -1251,6 +1330,12 @@ export const Icons = () => {
             Sites
           </div>
           <Sites />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="sitemap, structure, hierarchy">
+            Sitemap
+          </div>
+          <Sitemap />
         </div>
         <div>
           <div className="icon-name" data-keywords="slash, divide">
@@ -1461,6 +1546,12 @@ export const Icons = () => {
             Worker
           </div>
           <Worker />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="worker, approve, check, mark, duo tone">
+            WorkerApproveDuo
+          </div>
+          <WorkerApproveDuo />
         </div>
         <div>
           <div className="icon-name" data-keywords="work permit, document, hat, construction">
