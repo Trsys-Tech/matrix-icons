@@ -74,6 +74,7 @@ import { Elipsis } from "./Elipsis";
 import { ElipsisVertical } from "./ElipsisVertical";
 import { ElipsisVerticalStroke } from "./ElipsisVerticalStroke";
 import { Email } from "./Email";
+import { Equal } from "./Equal";
 import { Estimate } from "./Estimate";
 import { Exclusion } from "./Exclusion";
 import { Expand } from "./Expand";
@@ -108,12 +109,14 @@ import { Image } from "./Image";
 import { ImageFile } from "./ImageFile";
 import { Identity } from "./Identity";
 import { Import } from "./Import";
+import { Information } from "./Information";
 import { InstallGlass } from "./InstallGlass";
 import { InstallRail } from "./InstallRail";
 import { IPM } from "./IPM";
 import { Items } from "./Items";
 import { Jobs } from "./Jobs";
 import { LayerGroup } from "./LayerGroup";
+import { LessOrEqual } from "./LessOrEqual";
 import { Library } from "./Library";
 import { LessThan } from "./LessThan";
 import { LiftTruck } from "./LiftTruck";
@@ -708,6 +711,12 @@ export const Icons = () => {
           <Email />
         </div>
         <div>
+          <div className="icon-name" data-keywords="equal, math, symbol">
+            Equal
+          </div>
+          <Equal />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="estimate, calculator">
             Estimate
           </div>
@@ -912,6 +921,12 @@ export const Icons = () => {
           <Import />
         </div>
         <div>
+          <div className="icon-name" data-keywords="information, info, details, ipm">
+            Information
+          </div>
+          <Information />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="install, glass, wrench, tool">
             InstallGlass
           </div>
@@ -946,6 +961,12 @@ export const Icons = () => {
             LayerGroup
           </div>
           <LayerGroup />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="less, or, equal, math, symbol">
+            LessOrEqual
+          </div>
+          <LessOrEqual />
         </div>
         <div>
           <div className="icon-name" data-keywords="library, book, bookmark">
