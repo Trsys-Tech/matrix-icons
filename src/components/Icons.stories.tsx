@@ -8,6 +8,7 @@ import { AlignJustify } from "./AlignJustify";
 import { AlignLeft } from "./AlignLeft";
 import { AlignRight } from "./AlignRight";
 import { Archive } from "./Archive";
+import { ArrowBottomLeft } from "./ArrowBottomLeft";
 import { ArrowLeft } from "./ArrowLeft";
 import { ArrowLeftToLine } from "./ArrowLeftToLine";
 import { ArrowRight } from "./ArrowRight";
@@ -17,6 +18,7 @@ import { ArrowsInward } from "./ArrowsInward";
 import { ArrowsMaximize } from "./ArrowsMaximize";
 import { ArrowsMinimize } from "./ArrowsMinimize";
 import { ArrowsOutward } from "./ArrowsOutward";
+import { ArrowTopRight } from "./ArrowTopRight";
 import { Assemblies } from "./Assemblies";
 import { Attachment } from "./Attachment";
 import { Attendance } from "./Attendance";
@@ -315,6 +317,12 @@ export const Icons = () => {
           <Archive />
         </div>
         <div>
+          <div className="icon-name" data-keywords="arrow, bottom, left">
+            ArrowBottomLeft
+          </div>
+          <ArrowBottomLeft />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="arrow, left">
             ArrowLeft
           </div>
@@ -355,6 +363,12 @@ export const Icons = () => {
             ArrowsOutward
           </div>
           <ArrowsOutward />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="arrow, top, right">
+            ArrowTopRight
+          </div>
+          <ArrowTopRight />
         </div>
         <div>
           <div className="icon-name" data-keywords="arrows, maximize, outward">
