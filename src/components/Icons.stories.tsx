@@ -147,6 +147,7 @@ import { PaintBrush } from "./PaintBrush";
 import { Parties } from "./Parties";
 import { Pencil } from "./Pencil";
 import { Phone } from "./Phone";
+import { Play } from "./Play";
 import { Plus } from "./Plus";
 import { PriceQuote } from "./PriceQuote";
 import { Print } from "./Print";
@@ -212,6 +213,7 @@ import { Triangle } from "./Triangle";
 import { Type } from "./Type";
 import { Upload } from "./Upload";
 import { User } from "./User";
+import { UserOut } from "./UserOut";
 import { UserPlus } from "./UserPlus";
 import { ValueEngineering } from "./ValueEngineering";
 import { Warehouse } from "./Warehouse";
@@ -1157,6 +1159,12 @@ export const Icons = () => {
           <Phone />
         </div>
         <div>
+          <div className="icon-name" data-keywords="play, activate, circle">
+            Play
+          </div>
+          <Play />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="price, quote, dollar, money">
             PriceQuote
           </div>
@@ -1539,6 +1547,12 @@ export const Icons = () => {
             User
           </div>
           <User />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="user, person, out, leave, arrow, right">
+            UserOut
+          </div>
+          <UserOut />
         </div>
         <div>
           <div className="icon-name" data-keywords="user, person, plus, add, +">

@@ -2,7 +2,7 @@
   "name": "@trsys-tech/matrix-icons",
   "description": "MatrixUI Icon pack",
   "private": false,
-  "version": "0.2.4",
+  "version": "0.2.5",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -91,5 +91,9 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
+  },
+  "allowScripts": {
+    "fsevents@2.3.3": true,
+    "esbuild@0.25.12": true
   }
 }
