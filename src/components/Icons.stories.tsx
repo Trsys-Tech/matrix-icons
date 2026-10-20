@@ -9,6 +9,7 @@ import { AlignLeft } from "./AlignLeft";
 import { AlignRight } from "./AlignRight";
 import { Archive } from "./Archive";
 import { ArrowBottomLeft } from "./ArrowBottomLeft";
+import { ArrowDown } from "./ArrowDown";
 import { ArrowLeft } from "./ArrowLeft";
 import { ArrowLeftToLine } from "./ArrowLeftToLine";
 import { ArrowRight } from "./ArrowRight";
@@ -19,6 +20,7 @@ import { ArrowsMaximize } from "./ArrowsMaximize";
 import { ArrowsMinimize } from "./ArrowsMinimize";
 import { ArrowsOutward } from "./ArrowsOutward";
 import { ArrowTopRight } from "./ArrowTopRight";
+import { ArrowUp } from "./ArrowUp";
 import { Assemblies } from "./Assemblies";
 import { Attachment } from "./Attachment";
 import { Attendance } from "./Attendance";
@@ -27,6 +29,7 @@ import { Bars } from "./Bars";
 import { BarsSort } from "./BarsSort";
 import { Bell } from "./Bell";
 import { Board } from "./Board";
+import { BoxArrowUp } from "./BoxArrowUp";
 import { Breakdown } from "./Breakdown";
 import { CAD } from "./CAD";
 import { Calendar } from "./Calendar";
@@ -98,12 +101,15 @@ import { FolderOpen } from "./FolderOpen";
 import { FolderPlus } from "./FolderPlus";
 import { Forward } from "./Forward";
 import { Gear } from "./Gear";
+import { GenerativeAI } from "./GenerativeAI";
 import { Google } from "./Google";
+import { GPR } from "./GPR";
 import { GreaterOrEqual } from "./GreaterOrEqual";
 import { GreaterThan } from "./GreaterThan";
 import { Grid } from "./Grid";
 import { GridDividers } from "./GridDividers";
 import { Grip } from "./Grip";
+import { Home } from "./Home";
 import { Hourglass } from "./Hourglass";
 import { House } from "./House";
 import { Humidity } from "./Humidity";
@@ -150,6 +156,9 @@ import { Phone } from "./Phone";
 import { Play } from "./Play";
 import { Plus } from "./Plus";
 import { PriceQuote } from "./PriceQuote";
+import { PriorityHigh } from "./PriorityHigh";
+import { PriorityLow } from "./PriorityLow";
+import { PriorityMedium } from "./PriorityMedium";
 import { Print } from "./Print";
 import { ProductionSchedule } from "./ProductionSchedule";
 import { Progress } from "./Progress";
@@ -157,6 +166,7 @@ import { Projects } from "./Projects";
 import { QAApproveDuo } from "./QAApproveDuo";
 import { QCApprove } from "./QCApprove";
 import { QCApproveDuo } from "./QCApproveDuo";
+import { QRCode } from "./QRCode";
 import { Qualify } from "./Qualify";
 import { QuarterPast } from "./QuarterPast";
 import { Question } from "./Question";
@@ -164,12 +174,14 @@ import { Rainy } from "./Rainy";
 import { Receipt } from "./Receipt";
 import { Refresh } from "./Refresh";
 import { Reply } from "./Reply";
+import { ReportList } from "./ReportList";
 import { Reports } from "./Reports";
 import { RePost } from "./RePost";
 import { Requisition } from "./Requisition";
 import { Review } from "./Review";
 import { RFI } from "./RFI";
 import { RolePermission } from "./RolePermission";
+import { Samples } from "./Samples";
 import { Save } from "./Save";
 import { ScaleBalanced } from "./ScaleBalanced";
 import { Selected } from "./Selected";
@@ -190,8 +202,10 @@ import { SliderUp } from "./SliderUp";
 import { Snowflake } from "./Snowflake";
 import { Snowy } from "./Snowy";
 import { Spinner } from "./Spinner";
+import { Split } from "./Split";
 import { SquareArrowDownRight } from "./SquareArrowDownRight";
 import { SquareArrowUpLeft } from "./SquareArrowUpLeft";
+import { SquareArrowUpRight } from "./SquareArrowUpRight";
 import { SquareCaretDown } from "./SquareCaretDown";
 import { SquareCaretUp } from "./SquareCaretUp";
 import { SquareDownRight } from "./SquareDownRight";
@@ -204,6 +218,7 @@ import { Stock } from "./Stock";
 import { Submittal } from "./Submittal";
 import { Submitted } from "./Submitted";
 import { Sunny } from "./Sunny";
+import { Tickets } from "./Tickets";
 import { Transactions } from "./Transactions";
 import { Transfer } from "./Transfer";
 import { TransferList } from "./TransferList";
@@ -325,6 +340,12 @@ export const Icons = () => {
           <ArrowBottomLeft />
         </div>
         <div>
+          <div className="icon-name" data-keywords="arrow, down">
+            ArrowDown
+          </div>
+          <ArrowDown />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="arrow, left">
             ArrowLeft
           </div>
@@ -385,6 +406,12 @@ export const Icons = () => {
           <ArrowsMinimize />
         </div>
         <div>
+          <div className="icon-name" data-keywords="arrow, up">
+            ArrowUp
+          </div>
+          <ArrowUp />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="assemblies">
             Assemblies
           </div>
@@ -431,6 +458,12 @@ export const Icons = () => {
             Board
           </div>
           <Board />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="box, arrow, up, upload">
+            BoxArrowUp
+          </div>
+          <BoxArrowUp />
         </div>
         <div>
           <div className="icon-name" data-keywords="breakdown, article">
@@ -859,10 +892,22 @@ export const Icons = () => {
           <Gear />
         </div>
         <div>
+          <div className="icon-name" data-keywords="generative, AI, magic, sparkles">
+            GenerativeAI
+          </div>
+          <GenerativeAI />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="google">
             Google
           </div>
           <Google />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="GPR">
+            GPR
+          </div>
+          <GPR />
         </div>
         <div>
           <div className="icon-name" data-keywords="greater, equal, than, arrow, right">
@@ -887,6 +932,12 @@ export const Icons = () => {
             Grip
           </div>
           <Grip />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="home, house">
+            Home
+          </div>
+          <Home />
         </div>
         <div>
           <div className="icon-name" data-keywords="hourglass, timer, wait">
@@ -1171,6 +1222,24 @@ export const Icons = () => {
           <PriceQuote />
         </div>
         <div>
+          <div className="icon-name" data-keywords="priority, high, 3, lines">
+            PriorityHigh
+          </div>
+          <PriorityHigh />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="priority, low, 1, line">
+            PriorityLow
+          </div>
+          <PriorityLow />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="priority, medium, 2, lines">
+            PriorityMedium
+          </div>
+          <PriorityMedium />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="print, printer">
             Print
           </div>
@@ -1211,6 +1280,12 @@ export const Icons = () => {
             QCApproveDuo
           </div>
           <QCApproveDuo />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="QR, code, scan">
+            QRCode
+          </div>
+          <QRCode />
         </div>
         <div>
           <div className="icon-name" data-keywords="qualify, approve, check, mark">
@@ -1256,6 +1331,12 @@ export const Icons = () => {
         </div>
         <div>
           <div className="icon-name" data-keywords="report, list">
+            ReportList
+          </div>
+          <ReportList />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="report, list">
             Reports
           </div>
           <Reports />
@@ -1289,6 +1370,12 @@ export const Icons = () => {
             RolePermission
           </div>
           <RolePermission />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="samples, sample, print">
+            Samples
+          </div>
+          <Samples />
         </div>
         <div>
           <div className="icon-name" data-keywords="save, disk">
@@ -1411,6 +1498,12 @@ export const Icons = () => {
           <Spinner />
         </div>
         <div>
+          <div className="icon-name" data-keywords="split, branch">
+            Split
+          </div>
+          <Split />
+        </div>
+        <div>
           <div className="icon-name" data-keywords="square, arrow, up, left">
             SquareArrowUpLeft
           </div>
@@ -1421,6 +1514,12 @@ export const Icons = () => {
             SquareArrowDownRight
           </div>
           <SquareArrowDownRight />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="square, arrow, up, right, external, link">
+            SquareArrowUpRight
+          </div>
+          <SquareArrowUpRight />
         </div>
         <div>
           <div className="icon-name" data-keywords="square, caret, down">
@@ -1493,6 +1592,12 @@ export const Icons = () => {
             Sunny
           </div>
           <Sunny />
+        </div>
+        <div>
+          <div className="icon-name" data-keywords="tickets, ticket, support">
+            Tickets
+          </div>
+          <Tickets />
         </div>
         <div>
           <div className="icon-name" data-keywords="arrow up, arrow down, transfer, exchange">
